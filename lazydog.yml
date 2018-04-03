@@ -1,0 +1,39 @@
+# http server listen port
+http_port: 8431
+# the default passwd for root user of servers
+default_passwd: 'kgF^91@bhL_2018=JMgame%'
+# when the percent of used disk space is great than this value, an alarm email whill be send.
+disk_threshold: 75
+
+# email server info and mail to list.
+email:
+  server: 'smtp.exmail.qq.com'
+  port: 465
+  username: 'shyu@jiemai-tech.com'
+  passwd: '1980@CHenbo422'
+  mailto:
+    - 'shyu@jiemai-tech.com'
+    # - 'chpeng@jiemai-tech.com'
+    # - 'xluo@jiemai-tech.com'
+
+# monitor interval, seconds
+monitors:
+  disk_monitor: 3600
+  progress_monitor: 60
+  gateway_monitor: 60
+
+# server list will be watching
+servers:
+  - name: 'gate02-ly-GF'
+    ip: '58.87.80.100'
+    projects:
+      - path: '/workspace0002'
+        port: 9081
+    passwd: 'cdjm123qwe'
+
+  - name: gmserver01-cc
+    ip: 58.87.67.124
+    projects:
+      - path:
+        port:
+    passwd:

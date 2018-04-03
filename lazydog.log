@@ -1,0 +1,168 @@
+2018-04-03 20:47:35,150-[INFO]-root.lazydog@line 45: starting disk_monitor thread ...
+2018-04-03 20:47:35,150-[INFO]-root.lazydog@line 45: starting disk_monitor thread ...
+2018-04-03 20:47:35,151-[INFO]-root.lazydog@line 47: starting progress_monitor thread ...
+2018-04-03 20:47:35,151-[INFO]-root.lazydog@line 47: starting progress_monitor thread ...
+2018-04-03 20:47:35,151-[INFO]-root.lazydog@line 49: starting gateway_monitor thread ...
+2018-04-03 20:47:35,151-[INFO]-root.lazydog@line 49: starting gateway_monitor thread ...
+2018-04-03 20:47:35,152-[INFO]-root.lazydog@line 55: starting http server with port 8431 ...
+2018-04-03 20:47:35,152-[INFO]-root.lazydog@line 55: starting http server with port 8431 ...
+2018-04-03 20:47:35,211-[INFO]-root.progress_monitor@line 52: check project - /workspace0002 with port - 9081 on server: gate02-ly-GF
+2018-04-03 20:47:35,211-[INFO]-root.gateway_monitor@line 103: check project - /workspace0002 on server: gate02-ly-GF
+2018-04-03 20:47:35,211-[INFO]-root.progress_monitor@line 52: check project - /workspace0002 with port - 9081 on server: gate02-ly-GF
+2018-04-03 20:47:35,211-[INFO]-root.gateway_monitor@line 103: check project - /workspace0002 on server: gate02-ly-GF
+2018-04-03 20:47:35,338-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:47:35,338-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:47:35,816-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
+2018-04-03 20:47:35,816-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
+2018-04-03 20:47:35,931-[INFO]-root.disk_monitor@line 95: check server: gate02-ly-GF
+2018-04-03 20:47:35,931-[INFO]-root.disk_monitor@line 95: check server: gate02-ly-GF
+2018-04-03 20:47:35,953-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:47:35,953-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:47:36,100-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:47:36,100-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:47:36,194-[INFO]-root.lazydog@line 45: starting disk_monitor thread ...
+2018-04-03 20:47:36,194-[INFO]-root.lazydog@line 45: starting disk_monitor thread ...
+2018-04-03 20:47:36,195-[INFO]-root.lazydog@line 47: starting progress_monitor thread ...
+2018-04-03 20:47:36,195-[INFO]-root.lazydog@line 47: starting progress_monitor thread ...
+2018-04-03 20:47:36,196-[INFO]-root.lazydog@line 49: starting gateway_monitor thread ...
+2018-04-03 20:47:36,196-[INFO]-root.lazydog@line 49: starting gateway_monitor thread ...
+2018-04-03 20:47:36,196-[INFO]-root.lazydog@line 55: starting http server with port 8431 ...
+2018-04-03 20:47:36,196-[INFO]-root.lazydog@line 55: starting http server with port 8431 ...
+2018-04-03 20:47:36,255-[INFO]-root.gateway_monitor@line 103: check project - /workspace0002 on server: gate02-ly-GF
+2018-04-03 20:47:36,255-[INFO]-root.gateway_monitor@line 103: check project - /workspace0002 on server: gate02-ly-GF
+2018-04-03 20:47:36,256-[INFO]-root.progress_monitor@line 52: check project - /workspace0002 with port - 9081 on server: gate02-ly-GF
+2018-04-03 20:47:36,256-[INFO]-root.progress_monitor@line 52: check project - /workspace0002 with port - 9081 on server: gate02-ly-GF
+2018-04-03 20:47:36,392-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:47:36,392-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:47:36,420-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
+2018-04-03 20:47:36,420-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
+2018-04-03 20:47:36,495-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
+2018-04-03 20:47:36,495-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
+2018-04-03 20:47:36,545-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:47:36,545-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:47:36,604-[INFO]-root.disk_monitor@line 95: check server: gmserver01-cc
+2018-04-03 20:47:36,604-[INFO]-root.disk_monitor@line 95: check server: gmserver01-cc
+2018-04-03 20:47:36,907-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
+2018-04-03 20:47:36,907-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
+2018-04-03 20:47:36,975-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
+2018-04-03 20:47:36,975-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
+2018-04-03 20:47:37,042-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:47:37,042-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:47:37,099-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:47:37,099-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:47:37,509-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
+2018-04-03 20:47:37,509-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
+2018-04-03 20:47:37,528-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
+2018-04-03 20:47:37,528-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
+2018-04-03 20:47:37,634-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:47:37,634-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:47:37,644-[INFO]-root.monitor@line 58: 严重告警：
+    项目停止服务。
+    
+详情：
+    服务器：        gate02-ly-GF
+    IP地址：        58.87.80.100
+    项目路径：       /workspace0002
+    检查端口：       9081
+
+2018-04-03 20:47:37,644-[INFO]-root.monitor@line 58: 严重告警：
+    项目停止服务。
+    
+详情：
+    服务器：        gate02-ly-GF
+    IP地址：        58.87.80.100
+    项目路径：       /workspace0002
+    检查端口：       9081
+
+2018-04-03 20:47:38,064-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
+2018-04-03 20:47:38,064-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
+2018-04-03 20:47:38,179-[INFO]-root.disk_monitor@line 95: check server: gate02-ly-GF
+2018-04-03 20:47:38,179-[INFO]-root.disk_monitor@line 95: check server: gate02-ly-GF
+2018-04-03 20:47:38,188-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:47:38,188-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:47:38,353-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:47:38,353-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:47:38,621-[INFO]-root.monitor@line 58: 严重告警：
+    网管到服务器 PlaybackServer 的连接已断开！
+    
+详情：
+    服务器：        gate02-ly-GF
+    IP地址：        58.87.80.100
+    项目路径：       /workspace0002
+
+2018-04-03 20:47:38,621-[INFO]-root.monitor@line 58: 严重告警：
+    网管到服务器 PlaybackServer 的连接已断开！
+    
+详情：
+    服务器：        gate02-ly-GF
+    IP地址：        58.87.80.100
+    项目路径：       /workspace0002
+
+2018-04-03 20:47:38,646-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
+2018-04-03 20:47:38,646-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
+2018-04-03 20:47:38,686-[INFO]-root.monitor@line 58: 严重告警：
+    网管到服务器 PlaybackServer 的连接已断开！
+    
+详情：
+    服务器：        gate02-ly-GF
+    IP地址：        58.87.80.100
+    项目路径：       /workspace0002
+
+2018-04-03 20:47:38,686-[INFO]-root.monitor@line 58: 严重告警：
+    网管到服务器 PlaybackServer 的连接已断开！
+    
+详情：
+    服务器：        gate02-ly-GF
+    IP地址：        58.87.80.100
+    项目路径：       /workspace0002
+
+2018-04-03 20:47:38,773-[INFO]-root.monitor@line 58: 严重告警：
+    项目停止服务。
+    
+详情：
+    服务器：        gate02-ly-GF
+    IP地址：        58.87.80.100
+    项目路径：       /workspace0002
+    检查端口：       9081
+
+2018-04-03 20:47:38,773-[INFO]-root.monitor@line 58: 严重告警：
+    项目停止服务。
+    
+详情：
+    服务器：        gate02-ly-GF
+    IP地址：        58.87.80.100
+    项目路径：       /workspace0002
+    检查端口：       9081
+
+2018-04-03 20:47:38,794-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
+2018-04-03 20:47:38,794-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
+2018-04-03 20:48:23,469-[INFO]-root.lazydog@line 45: starting disk_monitor thread ...
+2018-04-03 20:48:23,469-[INFO]-root.lazydog@line 45: starting disk_monitor thread ...
+2018-04-03 20:48:23,469-[INFO]-root.lazydog@line 47: starting progress_monitor thread ...
+2018-04-03 20:48:23,469-[INFO]-root.lazydog@line 47: starting progress_monitor thread ...
+2018-04-03 20:48:23,470-[INFO]-root.lazydog@line 49: starting gateway_monitor thread ...
+2018-04-03 20:48:23,470-[INFO]-root.lazydog@line 49: starting gateway_monitor thread ...
+2018-04-03 20:48:23,470-[INFO]-root.lazydog@line 55: starting http server with port 8431 ...
+2018-04-03 20:48:23,470-[INFO]-root.lazydog@line 55: starting http server with port 8431 ...
+2018-04-03 20:48:23,529-[INFO]-root.progress_monitor@line 52: check project - /workspace0002 with port - 9081 on server: gate02-ly-GF
+2018-04-03 20:48:23,529-[INFO]-root.progress_monitor@line 52: check project - /workspace0002 with port - 9081 on server: gate02-ly-GF
+2018-04-03 20:48:23,530-[INFO]-root.gateway_monitor@line 103: check project - /workspace0002 on server: gate02-ly-GF
+2018-04-03 20:48:23,530-[INFO]-root.gateway_monitor@line 103: check project - /workspace0002 on server: gate02-ly-GF
+2018-04-03 20:48:23,666-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:48:23,666-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:48:24,177-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
+2018-04-03 20:48:24,177-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
+2018-04-03 20:48:24,307-[INFO]-root.disk_monitor@line 95: check server: gate02-ly-GF
+2018-04-03 20:48:24,307-[INFO]-root.disk_monitor@line 95: check server: gate02-ly-GF
+2018-04-03 20:48:24,315-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:48:24,315-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:48:24,465-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:48:24,465-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:48:24,781-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
+2018-04-03 20:48:24,781-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
+2018-04-03 20:48:24,859-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
+2018-04-03 20:48:24,859-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
+2018-04-03 20:48:24,917-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:48:24,917-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
+2018-04-03 20:48:24,968-[INFO]-root.disk_monitor@line 95: check server: gmserver01-cc
+2018-04-03 20:48:24,968-[INFO]-root.disk_monitor@line 95: check server: gmserver01-cc

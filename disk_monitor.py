@@ -15,7 +15,6 @@ import re
 import monitor
 from lazydog import logger
 
-
 ALARM_STR = """\
 一般告警：
     硬盘剩余空间过低。
@@ -38,7 +37,7 @@ CANCEL_ALARM = """\
 ***********************************************************
     一般告警：
         硬盘剩余空间过低。
-    
+
     详情：
         服务器：        %(name)s
         IP地址：        %(ip)s
@@ -71,14 +70,16 @@ class DiskMonitor(monitor.Monitor):
     def get_last_state(self, server, disk):
         if self.last_states:
             for last_state in self.last_states:
-                if last_state['server'] == server.name and last_state['device'] == disk.device:
+                if last_state['server'] == server.name and \
+                        last_state['device'] == disk.device:
                     return last_state['state']
         return False
 
     def set_last_state(self, server, disk):
         if self.last_states:
             for last_state in self.last_states:
-                if last_state['server'] == server.name and last_state['device'] == disk.device:
+                if last_state['server'] == server.name and \
+                        last_state['device'] == disk.device:
                     last_state['state'] = disk.is_less
                     return
         self.last_states.append({

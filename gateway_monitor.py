@@ -16,7 +16,7 @@ from lazydog import logger
 ALARM_STR = """\
 严重告警：
     网关服到服务器 %(to_server)s 的连接已断开！
-    
+
 详情：
     服务器：        %(name)s
     IP地址：        %(ip)s
@@ -30,7 +30,7 @@ CANCEL_ALARM = """\
 ***********************************************************
     严重告警：
         网关服到服务器 %(to_server)s 的连接已断开！
-        
+
     详情：
         服务器：        %(name)s
         IP地址：        %(ip)s
@@ -98,12 +98,12 @@ echo {\\'ActivityServer\\': $a_state, \\'PlaybackServer\\': $p_state, \\'ChatSer
             if project.is_maintenance:
                 return
 
-            logger.info(
-                'check project - {} on server: {}'.format(
-                    project.path, server.name))
+            logger.info('check project - {} on server: {}'.format(
+                project.path, server.name))
 
-            result = server.run_shell(self.shell % dict(project=project.path))[
-                0].decode('utf8').strip()
+            result = server.run_shell(
+                self.shell %
+                dict(project=project.path))[0].decode('utf8').strip()
             if not result:
                 return
 

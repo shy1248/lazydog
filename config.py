@@ -28,6 +28,7 @@ SMTP_USER = None
 SMTP_PASS = None
 MAIL_TO = None
 
+
 def load_conf(conf_file):
     if conf_file:
 
@@ -65,7 +66,7 @@ def load_conf(conf_file):
                 projects = []
                 for project_info in server_info['projects']:
                     project = Server.Project(project_info['path'],
-                                               project_info['port'])
+                                             project_info['port'])
                     projects.append(project)
 
                 server = Server(
@@ -76,8 +77,7 @@ def load_conf(conf_file):
                     default_passwd=DEF_PASSWD)
                 SERVERS.append(server)
         except Exception as e:
-            logger.error(
-                'load config file error! details:\n{e}'.format(e=e))
+            logger.error('load config file error! details:\n{e}'.format(e=e))
         file.close()
     else:
         logger.error('Cound not found config file!')

@@ -13,13 +13,12 @@
 import json
 
 import server
-import config
 from lazydog import logger
 
 MANI_STR = """\
 通知：
     项目已被置为维护状态，已停止监控。
-    
+
 详情：
     服务器：        %(name)s
     IP地址：        %(ip)s
@@ -30,7 +29,7 @@ MANI_STR = """\
 PREW_STR = """\
 通知：
     项目已恢复为服务状态，开始监控。
-    
+
 详情：
     服务器：        %(name)s
     IP地址：        %(ip)s
@@ -38,12 +37,14 @@ PREW_STR = """\
     检测端口：       %(port)s
 """
 
+
 def change_project_state(environ, start_response):
     start_response('200 OK', [('content-type', 'text/plain')])
     addr = environ['REMOTE_ADDR']
     params = environ['params']
     logger.info("Get post data: {} from host: {}".format(params, addr))
     yield json.dumps(params).encode('utf8')
+
     # for server in self.servers:
     #     if server.ip == ip:
     #         for project in server.projects:
@@ -81,4 +82,3 @@ def change_project_state(environ, start_response):
             for server in self.servers:
                 if server.name == 'gate01-cc':
                     server.ip = '58.87.71.208'
-

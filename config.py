@@ -10,62 +10,44 @@
 @Desc: --
 """
 
+from os.path import abspath, dirname, join
+
 import yaml
 
+from logger import logger
 from server import Server
-from lazydog import logger
+from utils.email import Email
+from disk_monitor import DiskMonitor
+from progress_monitor import ProgressMonitor
+from gateway_monitor import GatewayMonitor
+from httphandler import servers as srs
 
-HTTPD_PORT = None
-DEF_PASSWD = None
-DISK_THRESOLD = None
-SERVERS = []
-DISK_MONI_INTERV = None
-PRO_MONI_INTERV = None
-GATE_MONI_INTERV = None
-SMTP_SER = None
-SMTP_PORT = None
-SMTP_USER = None
-SMTP_PASS = None
-MAIL_TO = None
 
-def load_conf(conf_file):
+conf_file = join(abspath(dirname(__file__)), 'lazydog.yml')
+
+def load():
+
     if conf_file:
-
         file = open(conf_file)
         conf = yaml.load(file)
-        print(conf)
-
-        global HTTPD_PORT
-        global DEF_PASSWD
-        global DISK_THRESOLD
-        global DISK_MONI_INTERV
-        global PRO_MONI_INTERV
-        global GATE_MONI_INTERV
-        global SMTP_SER
-        global SMTP_PORT
-        global SMTP_USER
-        global SMTP_PASS
-        global MAIL_TO
-        global SERVERS
-
         try:
-            HTTPD_PORT = conf['http_port']
-            DEF_PASSWD = conf['default_passwd']
-            DISK_MONI_INTERV = conf['disk_threshold']
-            DISK_MONI_INTERV = conf['monitors']['disk_monitor']
-            PRO_MONI_INTERV = conf['monitors']['progress_monitor']
-            GATE_MONI_INTERV = conf['monitors']['gateway_monitor']
-            SMTP_SER = conf['email']['server']
-            SMTP_PORT = conf['email']['port']
-            SMTP_USER = conf['email']['username']
-            SMTP_PASS = conf['email']['passwd']
-            MAIL_TO = conf['email']['mailto']
+            default_password = conf['default_passwd']
+            disk_thresold = conf['disk_threshold']
+            disk_monitor_interval = conf['monitors']['disk_monitor']
+            progress_monitor_interval = conf['monitors']['progress_monitor']
+            gateway_monitor_interval = conf['monitors']['gateway_monitor']
+            smtp_server = conf['email']['server']
+            smtp_port = conf['email']['port']
+            smtp_username = conf['email']['username']
+            smtp_password = conf['email']['passwd']
+            mailto_list = conf['email']['mailto']
             servers_info = conf['servers']
+            servers = []
             for server_info in servers_info:
                 projects = []
                 for project_info in server_info['projects']:
                     project = Server.Project(project_info['path'],
-                                               project_info['port'])
+                                             project_info['port'])
                     projects.append(project)
 
                 server = Server(
@@ -73,11 +55,36 @@ def load_conf(conf_file):
                     ip=server_info['ip'],
                     projects=projects,
                     passwd=server_info['passwd'],
-                    default_passwd=DEF_PASSWD)
-                SERVERS.append(server)
+                    default_passwd=default_password)
+                servers.append(server)
+            # initilize
+            Server.Disk.set_threshold(disk_thresold)
+            Email.setup(smtp_server, smtp_port, smtp_username, smtp_password,
+                        mailto_list)
+            disk_monitor = DiskMonitor(disk_monitor_interval)
+            progress_monitor = ProgressMonitor(progress_monitor_interval)
+            gateway_monitor = GatewayMonitor(gateway_monitor_interval)
+
+            # clear cache
+            disk_monitor.servers.clear()
+            progress_monitor.servers.clear()
+            gateway_monitor.servers.clear()
+            # recache
+            for server in servers:
+                disk_monitor.servers.append(server)
+                if server.any_project_has_port():
+                    progress_monitor.servers.append(server)
+                if 'gate' in server.name:
+                    gateway_monitor.servers.append(server)
+                srs.append(server)
+
+            return conf, disk_monitor, progress_monitor, gateway_monitor
         except Exception as e:
             logger.error(
                 'load config file error! details:\n{e}'.format(e=e))
-        file.close()
+            return None
+        finally:
+            file.close()
     else:
         logger.error('Cound not found config file!')
+        return None

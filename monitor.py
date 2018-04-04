@@ -16,7 +16,7 @@ import threading
 import time
 
 from utils.email import Email
-from lazydog import logger
+from logger import logger
 
 ALARM_STR = """\
 严重告警：

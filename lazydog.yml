@@ -24,16 +24,16 @@ monitors:
 
 # server list will be watching
 servers:
-  - name: 'gate02-ly-GF'
-    ip: '58.87.80.100'
+  - name: 'login03-ly'
+    ip: '127.0.0.1'
     projects:
-      - path: '/workspace0002'
-        port: 9081
-    passwd: 'cdjm123qwe'
+      - path: '/data/loginserver_ly'
+        port: 9032
+    passwd:
 
-  - name: gmserver01-cc
-    ip: 58.87.67.124
+  - name: gate02-ly
+    ip: '140.143.128.210'
     projects:
-      - path:
-        port:
+      - path: '/jmserver/ly_gw_001'
+        port: 9081
     passwd:

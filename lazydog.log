@@ -1,168 +1,387 @@
-2018-04-03 20:47:35,150-[INFO]-root.lazydog@line 45: starting disk_monitor thread ...
-2018-04-03 20:47:35,150-[INFO]-root.lazydog@line 45: starting disk_monitor thread ...
-2018-04-03 20:47:35,151-[INFO]-root.lazydog@line 47: starting progress_monitor thread ...
-2018-04-03 20:47:35,151-[INFO]-root.lazydog@line 47: starting progress_monitor thread ...
-2018-04-03 20:47:35,151-[INFO]-root.lazydog@line 49: starting gateway_monitor thread ...
-2018-04-03 20:47:35,151-[INFO]-root.lazydog@line 49: starting gateway_monitor thread ...
-2018-04-03 20:47:35,152-[INFO]-root.lazydog@line 55: starting http server with port 8431 ...
-2018-04-03 20:47:35,152-[INFO]-root.lazydog@line 55: starting http server with port 8431 ...
-2018-04-03 20:47:35,211-[INFO]-root.progress_monitor@line 52: check project - /workspace0002 with port - 9081 on server: gate02-ly-GF
-2018-04-03 20:47:35,211-[INFO]-root.gateway_monitor@line 103: check project - /workspace0002 on server: gate02-ly-GF
-2018-04-03 20:47:35,211-[INFO]-root.progress_monitor@line 52: check project - /workspace0002 with port - 9081 on server: gate02-ly-GF
-2018-04-03 20:47:35,211-[INFO]-root.gateway_monitor@line 103: check project - /workspace0002 on server: gate02-ly-GF
-2018-04-03 20:47:35,338-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:47:35,338-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:47:35,816-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
-2018-04-03 20:47:35,816-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
-2018-04-03 20:47:35,931-[INFO]-root.disk_monitor@line 95: check server: gate02-ly-GF
-2018-04-03 20:47:35,931-[INFO]-root.disk_monitor@line 95: check server: gate02-ly-GF
-2018-04-03 20:47:35,953-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:47:35,953-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:47:36,100-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:47:36,100-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:47:36,194-[INFO]-root.lazydog@line 45: starting disk_monitor thread ...
-2018-04-03 20:47:36,194-[INFO]-root.lazydog@line 45: starting disk_monitor thread ...
-2018-04-03 20:47:36,195-[INFO]-root.lazydog@line 47: starting progress_monitor thread ...
-2018-04-03 20:47:36,195-[INFO]-root.lazydog@line 47: starting progress_monitor thread ...
-2018-04-03 20:47:36,196-[INFO]-root.lazydog@line 49: starting gateway_monitor thread ...
-2018-04-03 20:47:36,196-[INFO]-root.lazydog@line 49: starting gateway_monitor thread ...
-2018-04-03 20:47:36,196-[INFO]-root.lazydog@line 55: starting http server with port 8431 ...
-2018-04-03 20:47:36,196-[INFO]-root.lazydog@line 55: starting http server with port 8431 ...
-2018-04-03 20:47:36,255-[INFO]-root.gateway_monitor@line 103: check project - /workspace0002 on server: gate02-ly-GF
-2018-04-03 20:47:36,255-[INFO]-root.gateway_monitor@line 103: check project - /workspace0002 on server: gate02-ly-GF
-2018-04-03 20:47:36,256-[INFO]-root.progress_monitor@line 52: check project - /workspace0002 with port - 9081 on server: gate02-ly-GF
-2018-04-03 20:47:36,256-[INFO]-root.progress_monitor@line 52: check project - /workspace0002 with port - 9081 on server: gate02-ly-GF
-2018-04-03 20:47:36,392-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:47:36,392-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:47:36,420-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
-2018-04-03 20:47:36,420-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
-2018-04-03 20:47:36,495-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
-2018-04-03 20:47:36,495-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
-2018-04-03 20:47:36,545-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:47:36,545-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:47:36,604-[INFO]-root.disk_monitor@line 95: check server: gmserver01-cc
-2018-04-03 20:47:36,604-[INFO]-root.disk_monitor@line 95: check server: gmserver01-cc
-2018-04-03 20:47:36,907-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
-2018-04-03 20:47:36,907-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
-2018-04-03 20:47:36,975-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
-2018-04-03 20:47:36,975-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
-2018-04-03 20:47:37,042-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:47:37,042-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:47:37,099-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:47:37,099-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:47:37,509-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
-2018-04-03 20:47:37,509-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
-2018-04-03 20:47:37,528-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
-2018-04-03 20:47:37,528-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
-2018-04-03 20:47:37,634-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:47:37,634-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:47:37,644-[INFO]-root.monitor@line 58: 严重告警：
+2018-04-04 17:35:17,499 - [INFO] - main.lazydog: starting disk_monitor thread ...
+2018-04-04 17:35:17,500 - [INFO] - main.lazydog: starting progress_monitor thread ...
+2018-04-04 17:35:17,500 - [INFO] - main.lazydog: starting gateway_monitor thread ...
+2018-04-04 17:35:17,501 - [INFO] - main.lazydog: Starting server with port 8431 ...
+2018-04-04 17:35:17,540 - [INFO] - main.progress_monitor: check project - /data/loginserver_ly with port - 9032 on server: login03-ly
+2018-04-04 17:35:17,540 - [INFO] - main.gateway_monitor: check project - /jmserver/ly_gw_001 on server: gate02-ly
+2018-04-04 17:35:18,255 - [INFO] - main.disk_monitor: check server: login03-ly
+2018-04-04 17:35:18,826 - [INFO] - main.disk_monitor: check server: gate02-ly
+2018-04-04 17:35:19,654 - [INFO] - main.progress_monitor: check project - /jmserver/ly_gw_001 with port - 9081 on server: gate02-ly
+2018-04-04 17:35:19,793 - [INFO] - main.monitor: 严重告警：
+    网关服到服务器 PlaybackServer 的连接已断开！
+    
+详情：
+    服务器：        gate02-ly
+    IP地址：        123.206.67.120
+    项目路径：       /jmserver/ly_gw_001
+
+2018-04-04 17:35:20,792 - [INFO] - main.monitor: 严重告警：
     项目停止服务。
     
 详情：
-    服务器：        gate02-ly-GF
-    IP地址：        58.87.80.100
-    项目路径：       /workspace0002
+    服务器：        gate02-ly
+    IP地址：        123.206.67.120
+    项目路径：       /jmserver/ly_gw_001
     检查端口：       9081
 
-2018-04-03 20:47:37,644-[INFO]-root.monitor@line 58: 严重告警：
+2018-04-04 17:36:17,931 - [INFO] - main.lazydog: starting disk_monitor thread ...
+2018-04-04 17:36:17,931 - [INFO] - main.lazydog: starting progress_monitor thread ...
+2018-04-04 17:36:17,932 - [INFO] - main.lazydog: starting gateway_monitor thread ...
+2018-04-04 17:36:17,932 - [INFO] - main.lazydog: Starting server with port 8431 ...
+2018-04-04 17:36:17,972 - [INFO] - main.progress_monitor: check project - /data/loginserver_ly with port - 9032 on server: login03-ly
+2018-04-04 17:36:17,973 - [INFO] - main.gateway_monitor: check project - /jmserver/ly_gw_001 on server: gate02-ly
+2018-04-04 17:36:18,719 - [INFO] - main.disk_monitor: check server: login03-ly
+2018-04-04 17:36:19,334 - [INFO] - main.disk_monitor: check server: gate02-ly
+2018-04-04 17:36:20,076 - [INFO] - main.progress_monitor: check project - /jmserver/ly_gw_001 with port - 9081 on server: gate02-ly
+2018-04-04 17:36:20,142 - [INFO] - main.monitor: 严重告警：
+    网关服到服务器 PlaybackServer 的连接已断开！
+    
+详情：
+    服务器：        gate02-ly
+    IP地址：        123.206.67.120
+    项目路径：       /jmserver/ly_gw_001
+
+2018-04-04 17:36:22,009 - [INFO] - main.monitor: 严重告警：
     项目停止服务。
     
 详情：
-    服务器：        gate02-ly-GF
-    IP地址：        58.87.80.100
-    项目路径：       /workspace0002
+    服务器：        gate02-ly
+    IP地址：        123.206.67.120
+    项目路径：       /jmserver/ly_gw_001
     检查端口：       9081
 
-2018-04-03 20:47:38,064-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
-2018-04-03 20:47:38,064-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
-2018-04-03 20:47:38,179-[INFO]-root.disk_monitor@line 95: check server: gate02-ly-GF
-2018-04-03 20:47:38,179-[INFO]-root.disk_monitor@line 95: check server: gate02-ly-GF
-2018-04-03 20:47:38,188-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:47:38,188-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:47:38,353-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:47:38,353-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:47:38,621-[INFO]-root.monitor@line 58: 严重告警：
-    网管到服务器 PlaybackServer 的连接已断开！
+2018-04-04 17:36:22,183 - [INFO] - main.monitor: 严重告警：
+    网关服到服务器 ActivityServer 的连接已断开！
     
 详情：
-    服务器：        gate02-ly-GF
-    IP地址：        58.87.80.100
-    项目路径：       /workspace0002
+    服务器：        gate02-ly
+    IP地址：        123.206.67.120
+    项目路径：       /jmserver/ly_gw_001
 
-2018-04-03 20:47:38,621-[INFO]-root.monitor@line 58: 严重告警：
-    网管到服务器 PlaybackServer 的连接已断开！
+2018-04-04 17:36:23,242 - [INFO] - main.monitor: 严重告警：
+    网关服到服务器 ChatServer 的连接已断开！
     
 详情：
-    服务器：        gate02-ly-GF
-    IP地址：        58.87.80.100
-    项目路径：       /workspace0002
+    服务器：        gate02-ly
+    IP地址：        123.206.67.120
+    项目路径：       /jmserver/ly_gw_001
 
-2018-04-03 20:47:38,646-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
-2018-04-03 20:47:38,646-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
-2018-04-03 20:47:38,686-[INFO]-root.monitor@line 58: 严重告警：
-    网管到服务器 PlaybackServer 的连接已断开！
+2018-04-04 17:36:37,514 - [INFO] - main.httphandler: Get post data: {'cmd': '1'} from host: 127.0.0.1
+2018-04-04 17:37:23,225 - [INFO] - main.progress_monitor: check project - /data/loginserver_ly with port - 9032 on server: login03-ly
+2018-04-04 17:37:24,269 - [INFO] - main.gateway_monitor: check project - /jmserver/ly_gw_001 on server: gate02-ly
+2018-04-04 17:37:24,755 - [INFO] - main.progress_monitor: check project - /jmserver/ly_gw_001 with port - 9081 on server: gate02-ly
+2018-04-04 17:37:25,567 - [INFO] - main.monitor: 告警解除！
+
+以下是原始告警信息：
+***********************************************************
+    严重告警：
+        网关服到服务器 PlaybackServer 的连接已断开！
+        
+    详情：
+        服务器：        gate02-ly
+        IP地址：        140.143.128.210
+        项目路径：       /jmserver/ly_gw_001
+
+2018-04-04 17:37:26,580 - [INFO] - main.monitor: 告警解除！
+
+以下是原始告警信息：
+***********************************************************
+    严重告警：
+        网关服到服务器 ActivityServer 的连接已断开！
+        
+    详情：
+        服务器：        gate02-ly
+        IP地址：        140.143.128.210
+        项目路径：       /jmserver/ly_gw_001
+
+2018-04-04 18:07:48,133 - [INFO] - main.lazydog: starting disk_monitor thread ...
+2018-04-04 18:07:48,133 - [INFO] - main.lazydog: starting progress_monitor thread ...
+2018-04-04 18:07:48,134 - [INFO] - main.lazydog: starting gateway_monitor thread ...
+2018-04-04 18:07:48,134 - [INFO] - main.lazydog: Starting server with port 8431 ...
+2018-04-04 18:07:48,192 - [INFO] - main.progress_monitor: check project - /data/loginserver_ly with port - 9032 on server: login03-ly
+2018-04-04 18:07:48,192 - [INFO] - main.gateway_monitor: check project - /jmserver/ly_gw_001 on server: gate02-ly
+2018-04-04 18:07:48,945 - [INFO] - main.disk_monitor: check server: login03-ly
+2018-04-04 18:07:49,527 - [INFO] - main.monitor: 严重告警：
+    网关服到服务器 ChatServer 的连接已断开！
     
 详情：
-    服务器：        gate02-ly-GF
-    IP地址：        58.87.80.100
-    项目路径：       /workspace0002
+    服务器：        gate02-ly
+    IP地址：        140.143.128.210
+    项目路径：       /jmserver/ly_gw_001
 
-2018-04-03 20:47:38,686-[INFO]-root.monitor@line 58: 严重告警：
-    网管到服务器 PlaybackServer 的连接已断开！
+2018-04-04 18:07:49,689 - [INFO] - main.disk_monitor: check server: gate02-ly
+2018-04-04 18:07:50,325 - [INFO] - main.progress_monitor: check project - /jmserver/ly_gw_001 with port - 9081 on server: gate02-ly
+2018-04-04 18:08:21,134 - [INFO] - main.httphandler: Get post data: {'cmd': '1', 'project': '/data/loginserver_ly'} from host: 127.0.0.1
+2018-04-04 18:08:35,299 - [INFO] - main.httphandler: Get post data: {'cmd': '2', 'project': '/data/loginserver_ly'} from host: 127.0.0.1
+2018-04-04 18:08:51,694 - [INFO] - main.gateway_monitor: check project - /jmserver/ly_gw_001 on server: gate02-ly
+2018-04-04 18:08:51,750 - [INFO] - main.monitor: 严重告警：
+    服务器不可达！
     
 详情：
-    服务器：        gate02-ly-GF
-    IP地址：        58.87.80.100
-    项目路径：       /workspace0002
+    服务器：        login03-ly
+    IP地址：        127.0.0.1
 
-2018-04-03 20:47:38,773-[INFO]-root.monitor@line 58: 严重告警：
-    项目停止服务。
+2018-04-04 18:08:52,792 - [INFO] - main.progress_monitor: check project - /jmserver/ly_gw_001 with port - 9081 on server: gate02-ly
+2018-04-04 18:09:52,977 - [INFO] - main.gateway_monitor: check project - /jmserver/ly_gw_001 on server: gate02-ly
+2018-04-04 18:09:54,220 - [INFO] - main.progress_monitor: check project - /jmserver/ly_gw_001 with port - 9081 on server: gate02-ly
+2018-04-04 18:10:54,260 - [INFO] - main.gateway_monitor: check project - /jmserver/ly_gw_001 on server: gate02-ly
+2018-04-04 18:10:55,638 - [INFO] - main.progress_monitor: check project - /jmserver/ly_gw_001 with port - 9081 on server: gate02-ly
+2018-04-04 18:11:25,021 - [INFO] - main.lazydog: starting disk_monitor thread ...
+2018-04-04 18:11:25,021 - [INFO] - main.monitor: 严重告警：
+    服务器不可达！
     
 详情：
-    服务器：        gate02-ly-GF
-    IP地址：        58.87.80.100
-    项目路径：       /workspace0002
-    检查端口：       9081
+    服务器：        login03-ly
+    IP地址：        127.0.0.1
 
-2018-04-03 20:47:38,773-[INFO]-root.monitor@line 58: 严重告警：
-    项目停止服务。
+2018-04-04 18:11:25,022 - [INFO] - main.lazydog: starting progress_monitor thread ...
+2018-04-04 18:11:25,022 - [INFO] - main.lazydog: starting gateway_monitor thread ...
+2018-04-04 18:11:25,023 - [INFO] - main.lazydog: Starting server with port 8431 ...
+2018-04-04 18:11:25,084 - [INFO] - main.gateway_monitor: check project - /jmserver/ly_gw_001 on server: gate02-ly
+2018-04-04 18:11:25,088 - [INFO] - main.progress_monitor: check project - /jmserver/ly_gw_001 with port - 9081 on server: gate02-ly
+2018-04-04 18:11:26,662 - [INFO] - main.monitor: 严重告警：
+    网关服到服务器 ChatServer 的连接已断开！
     
 详情：
-    服务器：        gate02-ly-GF
-    IP地址：        58.87.80.100
-    项目路径：       /workspace0002
-    检查端口：       9081
+    服务器：        gate02-ly
+    IP地址：        140.143.128.210
+    项目路径：       /jmserver/ly_gw_001
 
-2018-04-03 20:47:38,794-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
-2018-04-03 20:47:38,794-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
-2018-04-03 20:48:23,469-[INFO]-root.lazydog@line 45: starting disk_monitor thread ...
-2018-04-03 20:48:23,469-[INFO]-root.lazydog@line 45: starting disk_monitor thread ...
-2018-04-03 20:48:23,469-[INFO]-root.lazydog@line 47: starting progress_monitor thread ...
-2018-04-03 20:48:23,469-[INFO]-root.lazydog@line 47: starting progress_monitor thread ...
-2018-04-03 20:48:23,470-[INFO]-root.lazydog@line 49: starting gateway_monitor thread ...
-2018-04-03 20:48:23,470-[INFO]-root.lazydog@line 49: starting gateway_monitor thread ...
-2018-04-03 20:48:23,470-[INFO]-root.lazydog@line 55: starting http server with port 8431 ...
-2018-04-03 20:48:23,470-[INFO]-root.lazydog@line 55: starting http server with port 8431 ...
-2018-04-03 20:48:23,529-[INFO]-root.progress_monitor@line 52: check project - /workspace0002 with port - 9081 on server: gate02-ly-GF
-2018-04-03 20:48:23,529-[INFO]-root.progress_monitor@line 52: check project - /workspace0002 with port - 9081 on server: gate02-ly-GF
-2018-04-03 20:48:23,530-[INFO]-root.gateway_monitor@line 103: check project - /workspace0002 on server: gate02-ly-GF
-2018-04-03 20:48:23,530-[INFO]-root.gateway_monitor@line 103: check project - /workspace0002 on server: gate02-ly-GF
-2018-04-03 20:48:23,666-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:48:23,666-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:48:24,177-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
-2018-04-03 20:48:24,177-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
-2018-04-03 20:48:24,307-[INFO]-root.disk_monitor@line 95: check server: gate02-ly-GF
-2018-04-03 20:48:24,307-[INFO]-root.disk_monitor@line 95: check server: gate02-ly-GF
-2018-04-03 20:48:24,315-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:48:24,315-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:48:24,465-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:48:24,465-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:48:24,781-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
-2018-04-03 20:48:24,781-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
-2018-04-03 20:48:24,859-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
-2018-04-03 20:48:24,859-[INFO]-paramiko.transport.transport@line 1687: Authentication (password) successful!
-2018-04-03 20:48:24,917-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:48:24,917-[INFO]-paramiko.transport.transport@line 1687: Connected (version 2.0, client OpenSSH_5.3)
-2018-04-03 20:48:24,968-[INFO]-root.disk_monitor@line 95: check server: gmserver01-cc
-2018-04-03 20:48:24,968-[INFO]-root.disk_monitor@line 95: check server: gmserver01-cc
+2018-04-04 18:11:27,892 - [INFO] - main.disk_monitor: check server: gate02-ly
+2018-04-04 18:11:29,956 - [INFO] - main.httphandler: Get post data: {'project': '/data/loginserver_ly', 'cmd': '2'} from host: 127.0.0.1
+2018-04-04 18:23:33,373 - [INFO] - main.lazydog: starting disk_monitor thread ...
+2018-04-04 18:23:33,374 - [INFO] - main.monitor: 严重告警：
+    服务器不可达！
+    
+详情：
+    服务器：        login03-ly
+    IP地址：        127.0.0.1
+
+2018-04-04 18:23:33,374 - [INFO] - main.lazydog: starting progress_monitor thread ...
+2018-04-04 18:23:33,375 - [INFO] - main.lazydog: starting gateway_monitor thread ...
+2018-04-04 18:23:33,376 - [INFO] - main.lazydog: Starting server with port 8431 ...
+2018-04-04 18:23:33,439 - [INFO] - main.gateway_monitor: check project - /jmserver/ly_gw_001 on server: gate02-ly
+2018-04-04 18:23:33,443 - [INFO] - main.progress_monitor: check project - /jmserver/ly_gw_001 with port - 9081 on server: gate02-ly
+2018-04-04 18:23:35,006 - [INFO] - main.monitor: 严重告警：
+    网关服到服务器 ChatServer 的连接已断开！
+    
+详情：
+    服务器：        gate02-ly
+    IP地址：        140.143.128.210
+    项目路径：       /jmserver/ly_gw_001
+
+2018-04-04 18:23:36,012 - [INFO] - main.httphandler: Get post data: {'cmd': '2', 'project': '/data/loginserver_ly'} from host: 127.0.0.1
+2018-04-04 18:23:36,308 - [INFO] - main.disk_monitor: check server: gate02-ly
+2018-04-04 18:24:35,812 - [INFO] - main.progress_monitor: check project - /jmserver/ly_gw_001 with port - 9081 on server: gate02-ly
+2018-04-04 18:24:36,099 - [INFO] - main.gateway_monitor: check project - /jmserver/ly_gw_001 on server: gate02-ly
+2018-04-04 18:24:51,651 - [INFO] - main.httphandler: Get post data: {'cmd': '2', 'project': '/data/loginserver_ly'} from host: 127.0.0.1
+2018-04-04 18:25:28,954 - [INFO] - main.lazydog: starting disk_monitor thread ...
+2018-04-04 18:25:28,955 - [INFO] - main.monitor: 严重告警：
+    服务器不可达！
+    
+详情：
+    服务器：        login03-ly
+    IP地址：        127.0.0.1
+
+2018-04-04 18:25:28,955 - [INFO] - main.lazydog: starting progress_monitor thread ...
+2018-04-04 18:25:28,955 - [INFO] - main.lazydog: starting gateway_monitor thread ...
+2018-04-04 18:25:28,956 - [INFO] - main.lazydog: Starting server with port 8431 ...
+2018-04-04 18:25:29,019 - [INFO] - main.progress_monitor: check project - /jmserver/ly_gw_001 with port - 9081 on server: gate02-ly
+2018-04-04 18:25:29,022 - [INFO] - main.gateway_monitor: check project - /jmserver/ly_gw_001 on server: gate02-ly
+2018-04-04 18:25:30,859 - [INFO] - main.httphandler: Get post data: {'cmd': '2', 'project': '/data/loginserver_ly'} from host: 127.0.0.1
+2018-04-04 18:25:31,115 - [INFO] - main.monitor: 严重告警：
+    网关服到服务器 ChatServer 的连接已断开！
+    
+详情：
+    服务器：        gate02-ly
+    IP地址：        140.143.128.210
+    项目路径：       /jmserver/ly_gw_001
+
+2018-04-04 18:25:31,728 - [INFO] - main.disk_monitor: check server: gate02-ly
+2018-04-04 18:27:06,265 - [INFO] - main.lazydog: starting disk_monitor thread ...
+2018-04-04 18:27:06,265 - [INFO] - main.monitor: 严重告警：
+    服务器不可达！
+    
+详情：
+    服务器：        login03-ly
+    IP地址：        127.0.0.1
+
+2018-04-04 18:27:06,265 - [INFO] - main.lazydog: starting progress_monitor thread ...
+2018-04-04 18:27:06,266 - [INFO] - main.lazydog: starting gateway_monitor thread ...
+2018-04-04 18:27:06,267 - [INFO] - main.lazydog: Starting server with port 8431 ...
+2018-04-04 18:27:06,330 - [INFO] - main.progress_monitor: check project - /jmserver/ly_gw_001 with port - 9081 on server: gate02-ly
+2018-04-04 18:27:06,333 - [INFO] - main.gateway_monitor: check project - /jmserver/ly_gw_001 on server: gate02-ly
+2018-04-04 18:27:08,508 - [INFO] - main.monitor: 严重告警：
+    网关服到服务器 ChatServer 的连接已断开！
+    
+详情：
+    服务器：        gate02-ly
+    IP地址：        140.143.128.210
+    项目路径：       /jmserver/ly_gw_001
+
+2018-04-04 18:27:08,606 - [INFO] - main.httphandler: Get post data: {'project': '/data/loginserver_ly', 'cmd': '2'} from host: 127.0.0.1
+2018-04-04 18:27:09,106 - [INFO] - main.disk_monitor: check server: gate02-ly
+2018-04-04 18:28:07,086 - [INFO] - main.lazydog: starting disk_monitor thread ...
+2018-04-04 18:28:07,086 - [INFO] - main.monitor: 严重告警：
+    服务器不可达！
+    
+详情：
+    服务器：        login03-ly
+    IP地址：        127.0.0.1
+
+2018-04-04 18:28:07,086 - [INFO] - main.lazydog: starting progress_monitor thread ...
+2018-04-04 18:28:07,087 - [INFO] - main.lazydog: starting gateway_monitor thread ...
+2018-04-04 18:28:07,087 - [INFO] - main.lazydog: Starting server with port 8431 ...
+2018-04-04 18:28:07,148 - [INFO] - main.progress_monitor: check project - /jmserver/ly_gw_001 with port - 9081 on server: gate02-ly
+2018-04-04 18:28:07,151 - [INFO] - main.gateway_monitor: check project - /jmserver/ly_gw_001 on server: gate02-ly
+2018-04-04 18:28:08,931 - [INFO] - main.httphandler: Get post data: {'cmd': '2', 'project': '/data/loginserver_ly'} from host: 127.0.0.1
+2018-04-04 18:28:09,205 - [INFO] - main.monitor: 严重告警：
+    网关服到服务器 ChatServer 的连接已断开！
+    
+详情：
+    服务器：        gate02-ly
+    IP地址：        140.143.128.210
+    项目路径：       /jmserver/ly_gw_001
+
+2018-04-04 18:28:09,825 - [INFO] - main.disk_monitor: check server: gate02-ly
+2018-04-04 18:28:49,193 - [INFO] - main.lazydog: starting disk_monitor thread ...
+2018-04-04 18:28:49,193 - [INFO] - main.monitor: 严重告警：
+    服务器不可达！
+    
+详情：
+    服务器：        login03-ly
+    IP地址：        127.0.0.1
+
+2018-04-04 18:28:49,193 - [INFO] - main.lazydog: starting progress_monitor thread ...
+2018-04-04 18:28:49,194 - [INFO] - main.lazydog: starting gateway_monitor thread ...
+2018-04-04 18:28:49,195 - [INFO] - main.lazydog: Starting server with port 8431 ...
+2018-04-04 18:28:49,259 - [INFO] - main.progress_monitor: check project - /jmserver/ly_gw_001 with port - 9081 on server: gate02-ly
+2018-04-04 18:28:49,260 - [INFO] - main.gateway_monitor: check project - /jmserver/ly_gw_001 on server: gate02-ly
+2018-04-04 18:28:50,795 - [INFO] - main.httphandler: Get post data: {'cmd': '2', 'project': '/data/loginserver_ly'} from host: 127.0.0.1
+2018-04-04 18:28:51,408 - [INFO] - main.monitor: 严重告警：
+    网关服到服务器 ChatServer 的连接已断开！
+    
+详情：
+    服务器：        gate02-ly
+    IP地址：        140.143.128.210
+    项目路径：       /jmserver/ly_gw_001
+
+2018-04-04 18:28:52,015 - [INFO] - main.disk_monitor: check server: gate02-ly
+2018-04-04 18:29:40,872 - [INFO] - main.lazydog: starting disk_monitor thread ...
+2018-04-04 18:29:40,872 - [INFO] - main.monitor: 严重告警：
+    服务器不可达！
+    
+详情：
+    服务器：        login03-ly
+    IP地址：        127.0.0.1
+
+2018-04-04 18:29:40,872 - [INFO] - main.lazydog: starting progress_monitor thread ...
+2018-04-04 18:29:40,873 - [INFO] - main.lazydog: starting gateway_monitor thread ...
+2018-04-04 18:29:40,874 - [INFO] - main.lazydog: Starting server with port 8431 ...
+2018-04-04 18:29:40,936 - [INFO] - main.progress_monitor: check project - /jmserver/ly_gw_001 with port - 9081 on server: gate02-ly
+2018-04-04 18:29:40,937 - [INFO] - main.gateway_monitor: check project - /jmserver/ly_gw_001 on server: gate02-ly
+2018-04-04 18:29:42,713 - [INFO] - main.httphandler: Get post data: {'cmd': '2', 'project': '/data/loginserver_ly'} from host: 127.0.0.1
+2018-04-04 18:29:42,999 - [INFO] - main.monitor: 严重告警：
+    网关服到服务器 ChatServer 的连接已断开！
+    
+详情：
+    服务器：        gate02-ly
+    IP地址：        140.143.128.210
+    项目路径：       /jmserver/ly_gw_001
+
+2018-04-04 18:29:43,620 - [INFO] - main.disk_monitor: check server: gate02-ly
+2018-04-04 18:30:53,115 - [INFO] - main.lazydog: starting disk_monitor thread ...
+2018-04-04 18:30:53,116 - [INFO] - main.monitor: 严重告警：
+    服务器不可达！
+    
+详情：
+    服务器：        login03-ly
+    IP地址：        127.0.0.1
+
+2018-04-04 18:30:53,116 - [INFO] - main.lazydog: starting progress_monitor thread ...
+2018-04-04 18:30:53,116 - [INFO] - main.lazydog: starting gateway_monitor thread ...
+2018-04-04 18:30:53,117 - [INFO] - main.lazydog: Starting server with port 8431 ...
+2018-04-04 18:30:53,181 - [INFO] - main.gateway_monitor: check project - /jmserver/ly_gw_001 on server: gate02-ly
+2018-04-04 18:30:53,185 - [INFO] - main.progress_monitor: check project - /jmserver/ly_gw_001 with port - 9081 on server: gate02-ly
+2018-04-04 18:30:54,748 - [INFO] - main.monitor: 严重告警：
+    网关服到服务器 ChatServer 的连接已断开！
+    
+详情：
+    服务器：        gate02-ly
+    IP地址：        140.143.128.210
+    项目路径：       /jmserver/ly_gw_001
+
+2018-04-04 18:30:54,922 - [INFO] - main.httphandler: Get post data: {'project': '/data/loginserver_ly', 'cmd': '2'} from host: 127.0.0.1
+2018-04-04 18:30:56,245 - [INFO] - main.disk_monitor: check server: gate02-ly
+2018-04-04 18:31:16,755 - [INFO] - main.lazydog: starting disk_monitor thread ...
+2018-04-04 18:31:16,756 - [INFO] - main.monitor: 严重告警：
+    服务器不可达！
+    
+详情：
+    服务器：        login03-ly
+    IP地址：        127.0.0.1
+
+2018-04-04 18:31:16,756 - [INFO] - main.lazydog: starting progress_monitor thread ...
+2018-04-04 18:31:16,757 - [INFO] - main.lazydog: starting gateway_monitor thread ...
+2018-04-04 18:31:16,757 - [INFO] - main.lazydog: Starting server with port 8431 ...
+2018-04-04 18:31:16,820 - [INFO] - main.progress_monitor: check project - /jmserver/ly_gw_001 with port - 9081 on server: gate02-ly
+2018-04-04 18:31:16,823 - [INFO] - main.gateway_monitor: check project - /jmserver/ly_gw_001 on server: gate02-ly
+2018-04-04 18:31:18,844 - [INFO] - main.httphandler: Get post data: {'cmd': '2', 'project': '/data/loginserver_ly'} from host: 127.0.0.1
+2018-04-04 18:31:18,948 - [INFO] - main.monitor: 严重告警：
+    网关服到服务器 ChatServer 的连接已断开！
+    
+详情：
+    服务器：        gate02-ly
+    IP地址：        140.143.128.210
+    项目路径：       /jmserver/ly_gw_001
+
+2018-04-04 18:31:19,565 - [INFO] - main.disk_monitor: check server: gate02-ly
+2018-04-04 18:31:27,951 - [INFO] - main.lazydog: starting disk_monitor thread ...
+2018-04-04 18:31:27,951 - [INFO] - main.monitor: 严重告警：
+    服务器不可达！
+    
+详情：
+    服务器：        login03-ly
+    IP地址：        127.0.0.1
+
+2018-04-04 18:31:27,952 - [INFO] - main.lazydog: starting progress_monitor thread ...
+2018-04-04 18:31:27,952 - [INFO] - main.lazydog: starting gateway_monitor thread ...
+2018-04-04 18:31:27,953 - [INFO] - main.lazydog: Starting server with port 8431 ...
+2018-04-04 18:31:28,018 - [INFO] - main.progress_monitor: check project - /jmserver/ly_gw_001 with port - 9081 on server: gate02-ly
+2018-04-04 18:31:28,021 - [INFO] - main.gateway_monitor: check project - /jmserver/ly_gw_001 on server: gate02-ly
+2018-04-04 18:31:30,205 - [INFO] - main.monitor: 严重告警：
+    网关服到服务器 ChatServer 的连接已断开！
+    
+详情：
+    服务器：        gate02-ly
+    IP地址：        140.143.128.210
+    项目路径：       /jmserver/ly_gw_001
+
+2018-04-04 18:31:30,822 - [INFO] - main.disk_monitor: check server: gate02-ly
+2018-04-04 18:34:46,995 - [INFO] - main.lazydog: starting disk_monitor thread ...
+2018-04-04 18:34:46,996 - [INFO] - main.monitor: 严重告警：
+    服务器不可达！
+    
+详情：
+    服务器：        login03-ly
+    IP地址：        127.0.0.1
+
+2018-04-04 18:34:46,996 - [INFO] - main.lazydog: starting progress_monitor thread ...
+2018-04-04 18:34:46,996 - [INFO] - main.lazydog: starting gateway_monitor thread ...
+2018-04-04 18:34:46,997 - [INFO] - main.lazydog: Starting server with port 8431 ...
+2018-04-04 18:34:47,061 - [INFO] - main.gateway_monitor: check project - /jmserver/ly_gw_001 on server: gate02-ly
+2018-04-04 18:34:47,065 - [INFO] - main.progress_monitor: check project - /jmserver/ly_gw_001 with port - 9081 on server: gate02-ly
+2018-04-04 18:34:48,644 - [INFO] - main.monitor: 严重告警：
+    网关服到服务器 ChatServer 的连接已断开！
+    
+详情：
+    服务器：        gate02-ly
+    IP地址：        140.143.128.210
+    项目路径：       /jmserver/ly_gw_001
+
+2018-04-04 18:34:49,621 - [INFO] - main.httphandler: Get post data: {'project': '/data/loginserver_ly', 'cmd': '2'} from host: 127.0.0.1
+2018-04-04 18:34:49,911 - [INFO] - main.disk_monitor: check server: gate02-ly
+2018-04-04 18:35:49,415 - [INFO] - main.progress_monitor: check project - /jmserver/ly_gw_001 with port - 9081 on server: gate02-ly
+2018-04-04 18:35:49,677 - [INFO] - main.gateway_monitor: check project - /jmserver/ly_gw_001 on server: gate02-ly
+2018-04-04 18:36:51,262 - [INFO] - main.gateway_monitor: check project - /jmserver/ly_gw_001 on server: gate02-ly
+2018-04-04 18:36:51,331 - [INFO] - main.progress_monitor: check project - /jmserver/ly_gw_001 with port - 9081 on server: gate02-ly

@@ -10,8 +10,9 @@
 @Desc: --
 """
 
-from lazydog import logger
+from logger import logger
 from monitor import Monitor
+from utils.singletion import Singleton
 
 ALARM_STR = """\
 严重告警：
@@ -40,7 +41,7 @@ CANCEL_ALARM = """\
 """
 
 
-class ProgressMonitor(Monitor):
+class ProgressMonitor(Monitor, Singleton):
 
     def watch(self, server):
         for project in server.projects:

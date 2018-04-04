@@ -14,7 +14,7 @@ import threading
 
 import paramiko
 
-from lazydog import logger
+from logger import logger
 from utils.ping import Ping
 
 

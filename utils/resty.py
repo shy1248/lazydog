@@ -69,7 +69,7 @@ class PathDispatcher(object):
         handler = self.pathmap.get((method, path), notfound_404)
         return handler(environ, start_response)
 
-    def register(self, method, path, func):
+    def regist(self, method, path, func):
         self.pathmap[method.lower(), path] = func
         return func
 

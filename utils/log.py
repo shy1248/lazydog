@@ -13,12 +13,11 @@
 import logging
 from logging import handlers
 
-_FORMAT = '%(asctime)s-[%(levelname)s]-%(name)s.%(module)s@line %(lineno)d: '\
-          '%(message)s'
+_FORMAT = '%(asctime)s - [%(levelname)s] - %(name)s.%(module)s: %(message)s'
 
 
 def init(filename=None):
-    logger = logging.getLogger('')
+    logger = logging.getLogger('main')
     logger.setLevel(logging.DEBUG)
     formatter = logging.Formatter(_FORMAT)
 

@@ -12,9 +12,7 @@
 
 import json
 
-import server
-import config
-from lazydog import logger
+from logger import logger
 
 MANI_STR = """\
 通知：
@@ -38,47 +36,31 @@ PREW_STR = """\
     检测端口：       %(port)s
 """
 
-def change_project_state(environ, start_response):
+servers = []
+
+def rest_hand(environ, start_response):
     start_response('200 OK', [('content-type', 'text/plain')])
     addr = environ['REMOTE_ADDR']
     params = environ['params']
     logger.info("Get post data: {} from host: {}".format(params, addr))
-    yield json.dumps(params).encode('utf8')
-    # for server in self.servers:
-    #     if server.ip == ip:
-    #         for project in server.projects:
-    #             if project.path == path:
-    #                 last_state = project.is_maintenance
-    #                 project.is_maintenance = True if status == 1 else False
-    #                 if project.is_maintenance and not last_state:
-    #                     monitor.Monitor.send_alarm(u'通知！',
-    #                                                MANI_STR % dict(
-    #                                                    name=server.name,
-    #                                                    ip=server.ip,
-    #                                                    project=project.path,
-    #                                                    port=project.port))
-    #                 elif not project.is_maintenance and last_state:
-    #                     monitor.Monitor.send_alarm(u'通知！',
-    #                                                PREW_STR % dict(
-    #                                                    name=server.name,
-    #                                                    ip=server.ip,
-    #                                                    project=project.path,
-    #                                                    port=project.port))
 
-    # Test function
-    def change_disk_treshold(self, status):
-        if status == 0:
-            server.Server.Disk.set_threshold(75)
-        else:
-            server.Server.Disk.set_threshold(10)
+    if 'cmd' in params.keys():
+        # reload conf file
+        if params['cmd'] == '1':
+            import config
+            conf, *_ = config.load()
+            yield "Reload conf: {}".format(conf).encode('utf8')
 
-    def change_ip(self, status):
-        if status == 0:
-            for server in self.servers:
-                if server.name == 'gate01-cc':
-                    server.ip = '58.87.80.120'
-        else:
-            for server in self.servers:
-                if server.name == 'gate01-cc':
-                    server.ip = '58.87.71.208'
-
+        # set project status in maintenance
+        elif params['cmd'] == '2' and 'project' in params.keys():
+            for server in servers:
+                if server.ip == addr:
+                    for project in server.projects:
+                        if project.path == params['project'].replace('\'', ''):
+                            last_status = project.is_maintenance
+                            project.is_maintenance = not last_status
+                            yield 'Project {} on server {} is change to {} status.'.format(
+                                params['project'], addr,
+                                'Prowork' if not project.is_maintenance else 'Maintenance').encode(
+                                'utf8')
+        yield "Error parameters: {}".format(json.dumps(params)).encode('utf8')

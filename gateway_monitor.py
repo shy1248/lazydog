@@ -11,7 +11,8 @@
 """
 
 from monitor import Monitor
-from lazydog import logger
+from logger import logger
+from fuckpy.singleton import Singleton
 
 ALARM_STR = """\
 严重告警：
@@ -38,7 +39,7 @@ CANCEL_ALARM = """\
 """
 
 
-class GatewayMonitor(Monitor):
+class GatewayMonitor(Monitor, Singleton):
     last_states = []
     shell = """\
 cd %(project)s;\

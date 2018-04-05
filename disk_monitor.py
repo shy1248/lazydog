@@ -12,8 +12,9 @@
 
 import re
 
-import monitor
-from lazydog import logger
+from monitor import Monitor
+from logger import logger
+from fuckpy.singleton import Singleton
 
 ALARM_STR = """\
 一般告警：
@@ -50,7 +51,7 @@ CANCEL_ALARM = """\
 """
 
 
-class DiskMonitor(monitor.Monitor):
+class DiskMonitor(Monitor, Singleton):
     last_states = []
 
     @staticmethod

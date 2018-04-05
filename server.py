@@ -14,8 +14,8 @@ import threading
 
 import paramiko
 
-from lazydog import logger
-from utils.ping import Ping
+from logger import logger
+from fuckpy.ping import Ping
 
 
 class Server(object):
@@ -36,8 +36,7 @@ class Server(object):
             try:
                 ssh.connect(self.ip, 22, self.user, self.passwd)
             except Exception as e:
-                logger.error(
-                    'ssh connection error! details:\n{e}'.format(e=e))
+                logger.error('ssh connection error! details:\n{e}'.format(e=e))
                 return None
         return ssh
 

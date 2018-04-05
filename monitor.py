@@ -15,13 +15,13 @@ from abc import abstractmethod
 import threading
 import time
 
-from utils.email import Email
-from lazydog import logger
+from fuckpy.email_ import Email
+from logger import logger
 
 ALARM_STR = """\
 严重告警：
     服务器不可达！
-    
+
 详情：
     服务器：        %(name)s
     IP地址：        %(ip)s
@@ -34,7 +34,7 @@ CANCELED_ALARM = """\
 =======================================================================================
 严重告警：
     服务器不可达！
-    
+
 详情：
     服务器：        %(name)s
     IP地址：        %(ip)s

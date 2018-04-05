@@ -10,13 +10,14 @@
 @Desc: --
 """
 
-from lazydog import logger
+from logger import logger
 from monitor import Monitor
+from fuckpy.singleton import Singleton
 
 ALARM_STR = """\
 严重告警：
     项目停止服务。
-    
+
 详情：
     服务器：        %(name)s
     IP地址：        %(ip)s
@@ -31,7 +32,7 @@ CANCEL_ALARM = """\
 ***********************************************************
 严重告警：
     项目停止服务。
-    
+
 详情：
     服务器：        %(name)s
     IP地址：        %(ip)s
@@ -40,8 +41,7 @@ CANCEL_ALARM = """\
 """
 
 
-class ProgressMonitor(Monitor):
-
+class ProgressMonitor(Monitor, Singleton):
     def watch(self, server):
         for project in server.projects:
             if project.is_maintenance:
@@ -61,14 +61,14 @@ class ProgressMonitor(Monitor):
             project.is_alive = True if not result == '0' else False
 
             if not project.is_alive and last_state:
-                self.send_alarm(u'严重告警！',
-                                ALARM_STR % dict(name=server.name,
-                                                 ip=server.ip,
-                                                 project=project.path,
-                                                 port=project.port))
+                self.send_alarm(u'严重告警！', ALARM_STR % dict(
+                    name=server.name,
+                    ip=server.ip,
+                    project=project.path,
+                    port=project.port))
             elif project.is_alive and not last_state:
-                self.send_alarm(u'告警解除！',
-                                CANCEL_ALARM % dict(name=server.name,
-                                                    ip=server.ip,
-                                                    project=project.path,
-                                                    port=project.port))
+                self.send_alarm(u'告警解除！', CANCEL_ALARM % dict(
+                    name=server.name,
+                    ip=server.ip,
+                    project=project.path,
+                    port=project.port))

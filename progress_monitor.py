@@ -56,8 +56,6 @@ class ProgressMonitor(Monitor, Singleton):
             result = server.run_shell(shell)[0].decode('utf8').strip()
             if not result:
                 return
-            project.is_alive = True if not result[0] == 0 else False
-            result = server.run_shell(shell)[0].decode('utf8').strip()
             project.is_alive = True if not result == '0' else False
 
             if not project.is_alive and last_state:

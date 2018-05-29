@@ -74,7 +74,7 @@ class DiskMonitor(Monitor, Singleton):
                 if last_state['server'] == server.name and \
                         last_state['device'] == disk.device:
                     return last_state['state']
-        return False
+        return None
 
     def set_last_state(self, server, disk):
         if self.last_states:

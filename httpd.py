@@ -11,7 +11,6 @@
 """
 
 import json
-
 from fuckpy.resty import PathDispatcher, Resty
 
 import config

@@ -21,6 +21,7 @@ monitors:
   disk_monitor: 3600
   progress_monitor: 60
   gateway_monitor: 60
+  db_conn_monitor: 3600
 
 # server list will be watching
 servers:

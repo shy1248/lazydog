@@ -13,20 +13,20 @@
 from os.path import abspath, dirname, join
 
 import yaml
-
-from logger import logger
-from server import Server
 from fuckpy.email_ import Email
+
+from db_monitor import DbConnMonitor
 from disk_monitor import DiskMonitor
-from progress_monitor import ProgressMonitor
 from gateway_monitor import GatewayMonitor
+from logger import logger
+from progress_monitor import ProgressMonitor
+from server import Server
 
 conf_file = join(abspath(dirname(__file__)), 'lazydog.yml')
 SERVERS = None
 
 
 def load():
-
     if conf_file:
         file = open(conf_file)
         conf = yaml.load(file)
@@ -36,6 +36,7 @@ def load():
             disk_monitor_interval = conf['monitors']['disk_monitor']
             progress_monitor_interval = conf['monitors']['progress_monitor']
             gateway_monitor_interval = conf['monitors']['gateway_monitor']
+            db_conn_monitor_interval = conf['monitors']['db_conn_monitor']
             smtp_server = conf['email']['server']
             smtp_port = conf['email']['port']
             smtp_username = conf['email']['username']
@@ -70,6 +71,7 @@ def load():
             disk_monitor = DiskMonitor(disk_monitor_interval)
             progress_monitor = ProgressMonitor(progress_monitor_interval)
             gateway_monitor = GatewayMonitor(gateway_monitor_interval)
+            db_conn_monitor = DbConnMonitor(db_conn_monitor_interval)
 
             # clear cache
             disk_monitor.servers.clear()
@@ -82,8 +84,10 @@ def load():
                     progress_monitor.servers.append(server)
                 if 'gate' in server.name:
                     gateway_monitor.servers.append(server)
+                if 'db' in server.name or 'datacenter' in server.name:
+                    db_conn_monitor.servers.append(server)
 
-            return conf, disk_monitor, progress_monitor, gateway_monitor
+            return conf, disk_monitor, progress_monitor, gateway_monitor, db_conn_monitor
         except Exception as e:
             logger.error('load config file error! details:\n{e}'.format(e=e))
             return None

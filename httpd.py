@@ -1,14 +1,13 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
-"""
-@Author: yushuibo
-@Copyright (c) 2018 yushuibo. All rights reserved.
-@Licence: GPL-2
-@Email: hengchen2005@gmail.com
-@Create: httphandler.py
-@Last Modified: 2018/4/1 20:57
-@Desc: --
-"""
+# -*- coding=UTF-8 -*-
+'''
+@ Since: 2019-06-02 07:13:08
+@ Author: shy
+@ Email: yushuibo@ebupt.com / hengchen2005@gmail.com
+@ Version: v1.0
+@ Description: -
+@ LastTime: 2019-07-20 18:31:09
+'''
 
 import json
 from fuckpy.resty import PathDispatcher, Resty

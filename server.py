@@ -1,4 +1,13 @@
 #!/usr/bin/env python
+# -*- coding=UTF-8 -*-
+'''
+@ Since: 2019-06-02 07:13:09
+@ Author: shy
+@ Email: yushuibo@ebupt.com / hengchen2005@gmail.com
+@ Version: v1.0
+@ Description: -
+'''
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 @Author: yushuibo
@@ -19,6 +28,7 @@ from fuckpy.ping import Ping
 
 
 class Server(object):
+
     def __init__(self, name, ip, projects, passwd, default_passwd):
         self.name = name
         self.ip = ip
@@ -66,6 +76,7 @@ class Server(object):
         return False
 
     class Project(object):
+
         def __init__(self, path, port):
             self.path = path
             self.port = port
@@ -92,5 +103,4 @@ class Server(object):
 
         @property
         def is_less(self):
-            return False if int(
-                self.use_percent.strip('%')) < self.threshold else True
+            return False if int(self.use_percent.strip('%')) < self.threshold else True
